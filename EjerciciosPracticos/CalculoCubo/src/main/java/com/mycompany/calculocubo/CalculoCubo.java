@@ -17,7 +17,7 @@ public class CalculoCubo {
         double Volumen;
         System.out.println("Ingrese el numero de aristas del cubo: ");
         Arista = sc.nextDouble();
-        Volumen = Arista * Arista * Arista;
+        Volumen = Math.pow(Arista,3);
         System.out.printf("Se calculo el volumen: %.2f%n", Volumen);
     }
 }
