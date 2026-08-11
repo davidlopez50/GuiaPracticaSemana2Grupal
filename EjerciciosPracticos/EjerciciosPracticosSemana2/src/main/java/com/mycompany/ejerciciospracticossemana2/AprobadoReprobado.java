@@ -8,18 +8,16 @@ import java.util.Scanner;
  *
  * @author david
  */
-public class PositivoNegativo {
+public class AprobadoReprobado {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.print("Ingrese su numero: ");
-    int num = input.nextInt();
+    System.out.print("Ingrese su calificación: ");
+    int calificacion = input.nextInt();
 
-    if(num > 0) {
-    System.out.println(num + " es positivo.");
-    } else if(num < 0) {
-    System.out.println(num + " es negativo.");
+    if(calificacion >= 60) {
+    System.out.println("Aprobado.");
     } else {
-    System.out.println("El número es cero.");
+    System.out.println("Reprobado.");
     }
     }
 }

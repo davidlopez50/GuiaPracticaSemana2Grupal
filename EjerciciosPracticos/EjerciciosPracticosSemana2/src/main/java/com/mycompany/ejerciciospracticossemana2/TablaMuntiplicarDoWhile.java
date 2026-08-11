@@ -8,18 +8,23 @@ import java.util.Scanner;
  *
  * @author david
  */
-public class PositivoNegativo {
-    public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.print("Ingrese su numero: ");
-    int num = input.nextInt();
 
-    if(num > 0) {
-    System.out.println(num + " es positivo.");
-    } else if(num < 0) {
-    System.out.println(num + " es negativo.");
-    } else {
-    System.out.println("El número es cero.");
-    }
+public class TablaMuntiplicarDoWhile {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        int num = input.nextInt();
+
+        int i = 1;
+
+        do {
+            System.out.println(num + " x " + i + " = " + (num * i));
+            i++;
+        } while (i <= 10);
+
+        input.close();
     }
 }

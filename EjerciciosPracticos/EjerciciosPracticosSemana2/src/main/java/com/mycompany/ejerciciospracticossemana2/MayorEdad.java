@@ -8,18 +8,16 @@ import java.util.Scanner;
  *
  * @author david
  */
-public class PositivoNegativo {
+public class MayorEdad { 
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.print("Ingrese su numero: ");
-    int num = input.nextInt();
+    System.out.print("Ingrese su edad: ");
+    int edad = input.nextInt();
 
-    if(num > 0) {
-    System.out.println(num + " es positivo.");
-    } else if(num < 0) {
-    System.out.println(num + " es negativo.");
+    if(edad >= 18) {
+    System.out.println("Eres mayor de edad.");
     } else {
-    System.out.println("El número es cero.");
+    System.out.println("Eres menor de edad.");
     }
     }
 }
